@@ -27,12 +27,22 @@ public class SituacaoAprendizagem01 {
     public int somar(){
         return this.x + this.y;
     }
-    //7 pontos.
-    //Criar uma mini calculadora
-    //somar dois números
-    //subtrair dois números
-    //multiplicar dois números
-    //dividir dois números
+    public int subtrair(){
+        return this.x - this.y;
+    }
+    public int multiplicar(){
+        return this.x * this.y;
+    }
+    public double dividir(){
+        return (double)this.x / this.y;
+    }
+    public int resto(){
+        return this.x % this.y;
+    }
+
+
+
+
     //retornar o resto da divisão de dois números
     //A classe vai ter que se comunicar com o programar principal
     //menu switch

@@ -20,12 +20,35 @@ public class Main {
         switch(op){
             case 1 -> {
                 System.out.println("Situação de Aprendizagem 01");
-                SituacaoAprendizagem01  sa1 = new SituacaoAprendizagem01(10,10);
-                System.out.println("a soma é:"+sa1.somar());
+                SituacaoAprendizagem01 sa1 = new SituacaoAprendizagem01(10, 10);
+                System.out.println("a soma é:" + sa1.somar());
+                System.out.println("a subtração é:" + sa1.subtrair());
+                System.out.println("a multiplicação é:" + sa1.multiplicar());
+                System.out.println("a divisão é:" + sa1.dividir());
+                System.out.println("a resto é:" + sa1.resto());
             }
 
-            case 2 -> System.out.println("Situação de Aprendizagem 02");
-            case 3 -> System.out.println("Situação de Aprendizagem 03");
+
+            case 2 -> {
+                System.out.println("Situação de Aprendizagem 02");
+                SituacaoAprendizagem02 sa02 = new SituacaoAprendizagem02();
+                sa02.setNomeCanal("Pipoca e Nanquim");
+                sa02.setDescricao("Vídeos incríveis sobre cinema e história em quadrinhos");
+                sa02.setUrl("teste.com.br");
+                sa02.setQtdeInscritos(30000);
+                sa02.setConheceCanal(false);
+                sa02.setQtdeVisualizacao(6000);
+                sa02.setTemShorts(true);
+                sa02.setQtdeHoras(1000);
+                System.out.println("Situação Financeira do Canal:"+sa02.verificaInscritos()
+                );
+            }
+            case 3 ->{
+                System.out.println("Situação de Aprendizagem 03");
+                SituacaoAprendizagem03 sa3 = new SituacaoAprendizagem03();
+                sa3.setNomeClasse("Cliente");
+                System.out.println(sa3.verificaPadraoClasse());
+            }
             case 4 -> System.out.println("Situação de Aprendizagem 04");
             case 5 -> System.out.println("Situação de Aprendizagem 05");
             case 6 -> System.out.println("Situação de Aprendizagem 06");
