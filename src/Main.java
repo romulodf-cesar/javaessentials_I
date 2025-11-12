@@ -49,8 +49,25 @@ public class Main {
                 sa3.setNomeClasse("Cliente");
                 System.out.println(sa3.verificaPadraoClasse());
             }
-            case 4 -> System.out.println("Situação de Aprendizagem 04");
-            case 5 -> System.out.println("Situação de Aprendizagem 05");
+            case 4 -> {
+                System.out.println("Situação de Aprendizagem 04");
+                SituacaoAprendizagem04 sa4 = new SituacaoAprendizagem04();
+                System.out.println(sa4.verificaPar(10));
+                System.out.println(sa4.verificaVip(false,"premium"));
+            }
+            case 5 ->{
+                System.out.println("Situação de Aprendizagem 05");
+                System.out.println("""
+                            while
+                            do while
+                            for
+                            Laço finito
+                            Laço infinito
+                            Controlado por sentinela
+                            Operador lógico - revisão tabela verdade
+                            Projeto Final - Java Essentials     
+                        """);
+            }
             case 6 -> System.out.println("Situação de Aprendizagem 06");
             case 7 -> System.out.println("Situação de Aprendizagem 07");
             default -> System.out.println("Opção Inválida!");

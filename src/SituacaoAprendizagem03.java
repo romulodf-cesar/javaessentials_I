@@ -68,7 +68,14 @@ public class SituacaoAprendizagem03 {
             //extrair o primeiro caractere
             char primeiroCaractere = this.nomeClasse.charAt(0);
             if(Character.isUpperCase(primeiroCaractere)){
-                return "Padrão Detectado: PascalCase";
+                 // Text Block - Java 15
+                 return   """
+                                      Padrão Detectado
+                                      PascalCase!
+                                      SENAI é o melhor
+                                      Vamos vencer
+                                      
+                                      """+this.nomeClasse;
             }else{
                 return "Padrão Incorreto!";
             }
