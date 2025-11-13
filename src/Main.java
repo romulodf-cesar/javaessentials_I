@@ -67,6 +67,11 @@ public class Main {
                             Operador lógico - revisão tabela verdade
                             Projeto Final - Java Essentials     
                         """);
+                SituacaoAprendizagem05 sa5 = new SituacaoAprendizagem05();
+                sa5.demonstrarWhile();
+                System.out.println("*************************************************");
+                sa5.demonstrarFor();
+                sa5.demonstrarCollection();
             }
             case 6 -> System.out.println("Situação de Aprendizagem 06");
             case 7 -> System.out.println("Situação de Aprendizagem 07");
